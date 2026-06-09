@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request Service</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="form-container">
+
+<h2>Request Service</h2>
+
+<form id="serviceForm">
+
+<input type="text"
+placeholder="Your Name"
+required>
+
+<input type="tel"
+placeholder="Mobile Number"
+required>
+
+<input type="text"
+placeholder="Address"
+required>
+
+<select required>
+
+<option value="">
+Select Service
+</option>
+
+<option>
+AC Installation
+</option>
+
+<option>
+AC Repair
+</option>
+
+<option>
+AC Gas Charging
+</option>
+
+<option>
+Fridge Repair
+</option>
+
+<option>
+Compressor Service
+</option>
+
+</select>
+
+<textarea
+placeholder="Describe Your Problem"
+rows="5">
+</textarea>
+
+<button type="submit">
+Submit Request
+</button>
+
+</form>
+
+</div>
+
+<script>
+
+document.getElementById("serviceForm")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert(
+"Service Request Submitted Successfully!"
+);
+
+});
+
+</script>
+
+</body>
+</html>
